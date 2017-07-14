@@ -43,8 +43,6 @@ archive_path=/tmp/${archive}
 tar -czf $archive_path -C /tmp $filename
 log "Created archive ${archive}"
 
-cat /tmp/$filename
-
 # Configure AWS CLI
 cat > ~/.aws/config <<EOL
 [default]
